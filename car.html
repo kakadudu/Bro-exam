@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+			Тачка для ветерана
+		</title>
+	</head>
+	<body>
+		<!--header-->
+		<header>
+			<h1>
+				Обери собі круту тачку
+			</h1>
+		</header>
+		<!--end of header-->
+		<!--main-->
+		<main>
+			<!--form-->
+			<form name="carsForm" method="POST">
+				<fieldset>
+					<legend>
+						Форма для замовлення тачки
+					</legend>
+					<br>
+					<label>
+						Тип машини
+					</label>
+					<br>
+					<select name="typeOfCar">
+						<option value="anyType">
+							Будь-який
+						</option>
+						<option value="sedan">
+							Седан
+						</option>
+						<option value="hatchback">
+							Хетчбек
+						</option>
+						<option value="offRoad">
+							Позашляховик
+						</option>
+						<option value="cabrio">
+							Кабріолет
+						</option>
+					</select>
+					<br>
+					<br>
+					<label>
+						Марка авто
+					</label>
+					<br>
+					<select name="carBrand">
+						<option value="anyCar">
+							Будь-яка
+						</option>
+						<option value="BMW">
+							БМВ
+						</option>
+						<option value="Mercedes">
+							Месредес
+						</option>
+						<option value="Volkswagen">
+							Фольксваген
+						</option>
+						<option value="Honda">
+							Хонда
+						</option>
+						<option value="Toyota">
+							Тойота
+						</option>
+					</select>
+					<br>
+					<br>
+					<label>
+						Країна походження
+					</label>
+					<br>
+					<select name="country">
+						<option value="anyCountry">
+							Будь-яка
+						</option>
+						<option value="Germany">
+							Німеччина
+						</option>
+						<option value="Hungary">
+							Угорщина
+						</option>
+						<option value="USA">
+							США
+						</option>
+						<option value="France">
+							Франція
+						</option>
+						<option value="Poland">
+							Польща
+						</option>
+						<option value="Latvia">
+							Латвія
+						</option>
+						<option value="Estonia">
+							Естонія
+						</option>
+					</select>
+					<br>
+					<br>
+					<label>
+						Ім'я, Прізвище
+					</label>
+					<br>
+					<input placeholder="Петренко Петро Петрович" type="text" name="name" required>
+					<br>
+					<br>
+					<label>
+						Номер телефона
+					</label>
+					<br>
+					<input placeholder="380671234567" type="tel" name="phoneNumber" maxlength="12" required>
+					<br>
+					<br>
+					<label>
+						Номер УБД
+					</label>
+					<br>
+					<input name="docNumber" maxlength="12">
+					<br>
+					<br>
+					<label>
+						Чи завозили раніше вживані авто з іншої країни?
+					</label>
+					<br>
+					<input type="radio" id="service_yes" name="service" value="yes">
+					<label for="service_yes">
+						Так
+					</label>
+					<input type="radio" id="service_no" name="service" value="no">
+					<label for="service_no">
+						Ні
+					</label>
+					<br>
+					<br>
+				</fieldset>
+				<button type="submit" value="send">
+					Відправити дані
+				</button>
+				<button type="reset" value="reset">
+					Очистити дані
+				</button>
+			</form>
+			<!--end of form-->
+		</main>
+		<!--end of main-->
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+			Приєднатись до ЗСУ
+		</title>
+	</head>
+	<body>
+		<main>
+			<br>
+			<!--form-->
+			<form name="questionForm" method="POST">
+				<fieldset>
+					<legend>
+						Приєднатись до ЗСУ!
+					</legend>
+					<label>
+						Ваше ПІБ
+					</label>
+					<br>
+					<input placeholder="Петренко Петро Петрович" type="text" name="name" required>
+					<br>
+					<br>
+					<label>
+						Ваш вік (18-90 років)
+					</label>
+					<br>
+					<input type="number" name="age" min="18" max="90">
+					<br>
+					<br>
+					<label>
+						Додайте документ
+					</label>
+					<br>
+					<input type="file" name="imageOfDoc">
+					<br>
+					<br>
+				</fieldset>
+				<button type="submit" value="send">
+					Відправити дані
+				</button>
+				<button type="reset" value="reset">
+					Очистити дані
+				</button>
+			</form>
+			<!--end of form-->
+		</main>	
+	</body>
+</html>
